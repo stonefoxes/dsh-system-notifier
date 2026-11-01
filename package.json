@@ -1,0 +1,32 @@
+{
+  "name": "dsh-system-notifier",
+  "version": "0.1.0",
+  "description": "DSH plugin: desktop notifications when the model asks for permission, asks a question, completes its task, or hits a blocking error (rate limit, quota, auth)",
+  "type": "module",
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "notify.js",
+    "config.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+# The dsh-system-notifier bundle patch: inserts the host plugin row.
+# All configuration lives on the row's `config` (see README.md); override it
+# in a higher-priority profile layer, not here.
+- insert:
+    - id: system-notifier
+      name: dsh-system-notifier

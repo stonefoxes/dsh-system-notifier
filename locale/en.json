@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "System Notifier",
+    "description": "Desktop notifications when the model asks for permission or a question, completes its task, or hits a blocking error such as a rate limit."
+  }
+}
